@@ -38,21 +38,20 @@ class TodoList extends Component {
 	render() {
 		console.log(this.state.todos);
 		const todos = this.state.todos.map((todo) => (
-			<li>
-				<Todo
-					text={todo.text}
-					removeTodo={this.removeTodo}
-					updateTodo={this.updateTodo}
-					id={todo.id}
-					key={Todo.id}
-				/>
-			</li>
+			<Todo
+				text={todo.text}
+				removeTodo={this.removeTodo}
+				updateTodo={this.updateTodo}
+				id={todo.id}
+				key={Todo.id}
+			/>
 		));
 
 		return (
-			<div>
+			<div className="todoList">
+				<h1>TO-DO LIST</h1>
 				<NewTodoForm addTodo={this.addTodo} />
-				<ol>{todos}</ol>
+				<span className="todos">{todos}</span>
 			</div>
 		);
 	}

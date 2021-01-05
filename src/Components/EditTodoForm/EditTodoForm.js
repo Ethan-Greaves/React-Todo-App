@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../../flex.scss';
 
 class EditTodoForm extends Component {
 	constructor(props) {

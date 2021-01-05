@@ -1,0 +1,23 @@
+input[type='text'] {
+	width: 50%;
+	height: 3em;
+	padding-right: 50px;
+}
+
+input[type='submit'] {
+	margin-left: -50px;
+	height: 20px;
+	width: 50px;
+}
+
+#new-todo-form-button {
+	border: none;
+	background: white;
+    height: 3.36em;
+    color: rgb(107, 107, 238);
+    font-weight: bold;    
+}
+
+form{
+    padding-bottom: 1em;
+}

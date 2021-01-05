@@ -1,0 +1,39 @@
+.crossedOff {
+	text-decoration: line-through;
+}
+
+@mixin todo-button($button-colour) {
+	background-color: $button-colour;
+	border: none;
+	color: white;
+	font-weight: bold;
+	width: 4em;
+	height: 100%;
+	cursor: pointer;
+	border-radius: 100px;
+	margin-left: 5px;
+}
+
+#remove-button {
+	@include todo-button(red);
+}
+
+#edit-button {
+	@include todo-button(lightseagreen);
+}
+
+.text {
+    margin-left: 2em;
+}
+
+.todo {
+	text-align: left;
+	width: 85%;
+	margin: auto;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+.todo-buttons {
+	display: inline;
+}

@@ -1,0 +1,15 @@
+.background {
+	background-image: linear-gradient(rgb(160, 25, 28), rgb(214, 112, 138));
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body,
+html {
+	height: 100%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}

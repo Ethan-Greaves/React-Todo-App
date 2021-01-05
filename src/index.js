@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import TodoList from './Components/TodoList/TodoList';
+import './index.scss';
 
 class App extends Component {
   constructor(props) {
@@ -9,6 +10,8 @@ class App extends Component {
   }
 
   render() {
+    document.body.classList.add('background');
+
     return ( < TodoList/> );
     }
 }
