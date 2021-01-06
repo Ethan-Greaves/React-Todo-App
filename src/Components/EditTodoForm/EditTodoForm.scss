@@ -1,0 +1,26 @@
+@import '../../SCSSPartials/todoButton';
+
+#cancel-button {
+	@include todo-button(red);
+}
+
+#complete-button {
+	@include todo-button(green);
+}
+
+.edit-todo {
+	text-align: left;
+    width: 85%;
+	margin: auto;
+	font-weight: bold;
+	margin-bottom: 1em;
+    border: 1px solid black;
+    height: 100%;
+}
+
+.edit-todo-input{
+    width: 66%;
+    height: 100%;
+}
+
+

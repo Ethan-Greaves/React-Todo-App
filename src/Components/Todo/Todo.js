@@ -47,7 +47,11 @@ class Todo extends Component {
 							<button onClick={this.switchEditing} id="edit-button">
 								<FontAwesomeIcon icon={faEdit} />
 							</button>
-						) : null}
+						) : (
+							<button id="disabled-edit-button" disabled>
+								<FontAwesomeIcon icon={faEdit} />
+							</button>
+						)}
 						<button onClick={this.handleClick} id="remove-button">
 							<FontAwesomeIcon icon={faTrashAlt} />
 						</button>

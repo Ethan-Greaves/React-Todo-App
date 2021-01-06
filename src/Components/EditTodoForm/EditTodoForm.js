@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../../flex.scss';
+import './EditTodoForm.scss';
 
 class EditTodoForm extends Component {
 	constructor(props) {
@@ -23,16 +24,19 @@ class EditTodoForm extends Component {
 
 	render() {
 		return (
-			<div>
-				<form onSubmit={this.handleSubmit}>
+			<div className="flex-container edit-todo">
+				<form onSubmit={this.handleSubmit} style={{ flexGrow: 8 }}>
 					<input
-						name='currentText'
+						name="currentText"
 						value={this.state.currentText}
-						onChange={this.handleChange}
+            onChange={this.handleChange}
+            className="edit-todo-input"
 					></input>
-					<button>Submit</button>
+					<button id="complete-button">Submit</button>
 				</form>
-				<button onClick={this.props.cancelEditing}>Cancel</button>
+				<button onClick={this.props.cancelEditing} id="cancel-button">
+					X
+				</button>
 			</div>
 		);
 	}

@@ -49,7 +49,7 @@ class TodoList extends Component {
 
 		return (
 			<div className="todoList">
-				<h1>TO-DO LIST</h1>
+				<h2>TO-DO LIST</h2>
 				<NewTodoForm addTodo={this.addTodo} />
 				<span className="todos">{todos}</span>
 			</div>

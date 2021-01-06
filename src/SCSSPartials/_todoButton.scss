@@ -1,0 +1,11 @@
+@mixin todo-button($button-colour) {
+	background-color: $button-colour;
+	border: none;
+	color: white;
+	font-weight: bold;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	border-radius: 100px;
+	margin-left: 5px;
+}
