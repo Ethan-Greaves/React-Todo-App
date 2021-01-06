@@ -1,4 +1,5 @@
 @import '../../SCSSPartials/todoButton';
+@import '../../SCSSPartials/animations';
 
 .crossedOff {
 	text-decoration: line-through;
@@ -31,6 +32,14 @@
 	color: white;
 	font-size: small;
 	border: 1px solid black;
+}
+
+.deleteAnimation {
+	animation: deleteTodo 1.5s 1;
+}
+
+.addAnimation {
+	animation: addTodo 2s 1;
 }
 
 .todo-buttons {

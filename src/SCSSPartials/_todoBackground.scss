@@ -1,0 +1,11 @@
+@mixin todoBackground(){
+    background-color: #191933;
+	border-radius: 4px;
+	margin-bottom: 12px;
+	display: flex;
+	align-items: center;
+	padding: 8px;
+	color: white;
+	font-size: small;
+	border: 1px solid black;
+}

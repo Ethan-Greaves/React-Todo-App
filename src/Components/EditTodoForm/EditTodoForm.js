@@ -29,10 +29,11 @@ class EditTodoForm extends Component {
 					<input
 						name="currentText"
 						value={this.state.currentText}
-            onChange={this.handleChange}
-            className="edit-todo-input"
+						onChange={this.handleChange}
+						className="edit-todo-input"
+						autoFocus
 					></input>
-					<button id="complete-button">Submit</button>
+					{/* <button id="complete-button">Submit</button> */}
 				</form>
 				<button onClick={this.props.cancelEditing} id="cancel-button">
 					X

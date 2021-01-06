@@ -12,18 +12,28 @@ class Todo extends Component {
 		this.state = {
 			isEditing: false,
 			isCompleted: false,
+			deleteTodoAnimation: '',
+			addTodoAnimation: 'addAnimation',
 		};
 	}
 
 	handleClick = () => {
-		this.props.removeTodo(this.props.id);
+		this.setState({ deleteTodoAnimation: 'deleteAnimation', addTodoAnimation: '' });
+
+		setTimeout(() => {
+			this.props.removeTodo(this.props.id);
+			this.setState({ deleteTodoAnimation: '' });
+		}, 1450);
 	};
 
 	switchEditing = () => {
-		this.setState((prevState) => {
-			return { isEditing: prevState.isEditing === false ? true : false };
+		this.setState({
+			isEditing: !this.state.isEditing,
+			addTodoAnimation: '',
 		});
 	};
+
+	setRenderAfterEditing = () => {};
 
 	setCompleted = () => {
 		this.setState({ isCompleted: !this.state.isCompleted });
@@ -34,7 +44,9 @@ class Todo extends Component {
 
 		if (!this.state.isEditing) {
 			return (
-				<div className="todo flex-container">
+				<div
+					className={`todo flex-container ${this.state.deleteTodoAnimation} ${this.state.addTodoAnimation}`}
+				>
 					<p
 						style={{ flexGrow: 8 }}
 						className={this.state.isCompleted ? 'crossedOff' : null}
@@ -65,6 +77,7 @@ class Todo extends Component {
 					cancelEditing={this.switchEditing}
 					updateTodo={this.props.updateTodo}
 					todoId={this.props.id}
+					setRenderAfterEditing={this.setRenderAfterEditing}
 				/>
 			);
 		}

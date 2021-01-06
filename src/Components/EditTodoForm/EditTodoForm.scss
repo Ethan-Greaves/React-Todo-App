@@ -1,4 +1,5 @@
 @import '../../SCSSPartials/todoButton';
+@import '../../SCSSPartials/animations';
 
 #cancel-button {
 	@include todo-button(red);
@@ -9,18 +10,26 @@
 }
 
 .edit-todo {
-	text-align: left;
-    width: 85%;
-	margin: auto;
-	font-weight: bold;
-	margin-bottom: 1em;
-    border: 1px solid black;
-    height: 100%;
+	background-color: #191933;
+	border-radius: 4px;
+	margin-bottom: 12px;
+	display: flex;
+	align-items: center;
+	padding: 8px;
+	color: white;
+	font-size: small;
+	animation: borderColourFadeEditing .4s 1;
+	border: 1px solid lightseagreen;
 }
 
-.edit-todo-input{
-    width: 66%;
-    height: 100%;
+.edit-todo-input {
+	background: transparent;
+	color: white;
+	outline: none;
+	border: none;
+	align-items: center;
+	margin-top: 14px;
+	font-size: small;
 }
 
 

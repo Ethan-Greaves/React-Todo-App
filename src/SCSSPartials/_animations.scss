@@ -1,0 +1,42 @@
+@keyframes borderColourFadeEditing {
+	0% {
+		border: 1px solid black;
+	}
+
+	100% {
+		border: 1px solid lightseagreen;
+	}
+}
+
+@keyframes borderColourFadeNotEditing {
+	0% {
+		border: 1px solid lightseagreen;
+	}
+
+	100% {
+		border: 1px solid black;
+	}
+}
+
+@keyframes deleteTodo {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		transform: translate(-450px);
+		opacity: 0;
+	}
+}
+
+@keyframes addTodo {
+	0% {
+		transform: translate(-450px);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate(0px);
+		opacity: 1;
+	}
+}
