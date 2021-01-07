@@ -4,6 +4,7 @@ import EditTodoForm from '../EditTodoForm/EditTodoForm';
 import '../../flex.scss';
 import { faEdit } from '@fortawesome/free-solid-svg-icons';
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Todo extends Component {
@@ -47,6 +48,9 @@ class Todo extends Component {
 				<div
 					className={`todo flex-container ${this.state.deleteTodoAnimation} ${this.state.addTodoAnimation}`}
 				>
+					<span className={this.state.isCompleted ? 'checkboxTicked' : 'checkbox'}>
+						{this.state.isCompleted ? <FontAwesomeIcon icon={faCheck} /> : null}
+					</span>
 					<p
 						style={{ flexGrow: 8 }}
 						className={this.state.isCompleted ? 'crossedOff' : null}
