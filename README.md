@@ -21,3 +21,7 @@ A todo app created in React to help implement the fundementals of the framework 
 * JSX
 * Components
 * Event handlers (OnClick, OnChanges etc.)
+
+<hr>
+
+CSS inspiration: <a  href="https://codepen.io/aybukeceylan/pen/abmLNag">https://codepen.io/aybukeceylan/pen/abmLNag</a>
