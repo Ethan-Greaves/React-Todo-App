@@ -36,7 +36,6 @@ class TodoList extends Component {
 	};
 
 	render() {
-		console.log(this.state.todos);
 		const todos = this.state.todos.map((todo) => (
 			<Todo
 				text={todo.text}
