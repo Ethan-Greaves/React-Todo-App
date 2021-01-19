@@ -20,7 +20,7 @@ A todo app created in React to help implement the fundementals of the framework 
 * High order array methods
 * JSX
 * Components
-* Event handlers (OnClick, OnChanges etc.)
+* Event handlers (OnClick, OnChange, etc.)
 
 <hr>
 
